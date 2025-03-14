@@ -2,13 +2,17 @@
 import { Outlet } from 'react-router-dom'
 import './App.css'
 import Navitems from './components/Navitems'
+import Footer from './components/Footer'
 
 function App() {
   
   return (
     <>
     <Navitems/>
-       <Outlet/>
+     <div className='min-vh-100'>
+     <Outlet/>
+     </div>
+       <Footer/>
     </>
   )
 }

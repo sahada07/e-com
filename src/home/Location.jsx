@@ -38,7 +38,7 @@ const clientsList = [
     {
     imgUrl: '/src/assets/images/clients/avater.jpg',
     imgAlt: 'education thumb rajibraj91 rajibraj',
-    text: 'Join with Us',
+    text: 'From USA',
     },
     ]
 
@@ -59,6 +59,10 @@ export const Location = () => {
                             <Link to='/sign-up' className='client-content'>
                             <span>{val.text}</span>
                             </Link>
+                            <div className='client-thumb'>
+                              <img src={val.imgUrl} alt="" />
+
+                            </div>
                         </div>
                     ))
                 }
